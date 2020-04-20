@@ -1,0 +1,7 @@
+http://qun.qzone.qq.com/cgi-bin/get_group_member?callbackFun=_GroupMember&uin=1361778219&groupid=554272507&neednum=1&r=0.5830518859201235&g_tk=1262182242
+
+http://qun.qzone.qq.com/cgi-bin/get_group_share_info?groupid=554272507&uin=1361778219&callbackFun=_GroupShareInfo&t=0.32244439109985557&g_tk=1262182242
+
+http://qun.qzone.qq.com/cgi-bin/group_share_list?uin=1361778219&groupid=554272507&bussinessid=0&r=0.7176197511013207&charset=utf-8&g_tk=1262182242
+
+http://qun.qzone.qq.com/cgi-bin/group_share_list?uin=1361778219&bussinessid=0&groupid=554272507&g_tk=1262182242

@@ -1,0 +1,33 @@
+int N[2][2];
+
+bool JudgeDirection(int r,int xs,int ys,int x,int y){
+	int nx = x,ny = y;
+	bool ret = true;
+	for(int i = 0;i <= 2;i++){
+		if(N[nx][ny] != request){ret=false;break;}
+		nx+=xs;ny+=ys;
+	}
+	return ret;
+}
+
+bool JudgeWin(int r)
+	bool ret = false;
+	for(int x = 0;x<=2;x++){
+		for(int y = 0;y<=2;y++){
+			if(x==0){ret|=JudgeDirection(r,1,0,x,y);}
+			if(y==0){ret|=JudgeDirection(r,0,1,x,y);}
+			if(x==0 && y==0){ret|=JudgeDirection(r,1,1,x,y);}
+			if(x==2 && y==0){ret|=JudgeDirection(r,-1,1,x,y);}
+			if(ret){break;}
+		}
+	}
+	return ret;
+}
+
+int main(){
+	N[0][0]=1;
+	N[1][1]=1;
+	N[2][2]=1;
+	cout<<JudgeWin(1);
+	return 0;
+}
