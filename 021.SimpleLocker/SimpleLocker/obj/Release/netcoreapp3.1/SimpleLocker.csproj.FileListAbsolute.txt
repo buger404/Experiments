@@ -1,0 +1,11 @@
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\bin\Release\netcoreapp3.1\SimpleLocker.exe
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\bin\Release\netcoreapp3.1\SimpleLocker.deps.json
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\bin\Release\netcoreapp3.1\SimpleLocker.runtimeconfig.json
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\bin\Release\netcoreapp3.1\SimpleLocker.runtimeconfig.dev.json
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\bin\Release\netcoreapp3.1\SimpleLocker.dll
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\bin\Release\netcoreapp3.1\SimpleLocker.pdb
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\obj\Release\netcoreapp3.1\SimpleLocker.csprojAssemblyReference.cache
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\obj\Release\netcoreapp3.1\SimpleLocker.AssemblyInfoInputs.cache
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\obj\Release\netcoreapp3.1\SimpleLocker.AssemblyInfo.cs
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\obj\Release\netcoreapp3.1\SimpleLocker.dll
+E:\Projects\VSProjects\SimpleLocker\SimpleLocker\obj\Release\netcoreapp3.1\SimpleLocker.pdb

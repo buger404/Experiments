@@ -1,0 +1,8 @@
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\bin\Debug\ConsoleWeb.exe.config
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\bin\Debug\ConsoleWeb.exe
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\bin\Debug\ConsoleWeb.pdb
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.csprojResolveAssemblyReference.cache
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\Interop.MSXML2.dll
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.csproj.ResolveComReference.cache
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.exe
+E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.pdb

@@ -1,0 +1,6 @@
+E:\Projects\VSProjects\StrCompare\StrCompare\bin\Debug\StrCompare.exe.config
+E:\Projects\VSProjects\StrCompare\StrCompare\bin\Debug\StrCompare.exe
+E:\Projects\VSProjects\StrCompare\StrCompare\bin\Debug\StrCompare.pdb
+E:\Projects\VSProjects\StrCompare\StrCompare\obj\Debug\StrCompare.csprojAssemblyReference.cache
+E:\Projects\VSProjects\StrCompare\StrCompare\obj\Debug\StrCompare.exe
+E:\Projects\VSProjects\StrCompare\StrCompare\obj\Debug\StrCompare.pdb

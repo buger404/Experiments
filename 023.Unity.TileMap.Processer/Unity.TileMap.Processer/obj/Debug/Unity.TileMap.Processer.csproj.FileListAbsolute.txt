@@ -1,0 +1,8 @@
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\bin\Debug\Unity.TileMap.Processer.exe
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\bin\Debug\Unity.TileMap.Processer.pdb
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\obj\Debug\Unity.TileMap.Processer.csprojAssemblyReference.cache
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\obj\Debug\Unity.TileMap.Processer.Form1.resources
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\obj\Debug\Unity.TileMap.Processer.Properties.Resources.resources
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\obj\Debug\Unity.TileMap.Processer.csproj.GenerateResource.cache
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\obj\Debug\Unity.TileMap.Processer.exe
+E:\Projects\VSProjects\Unity.TileMap.Processer\Unity.TileMap.Processer\obj\Debug\Unity.TileMap.Processer.pdb

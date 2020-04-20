@@ -1,0 +1,6 @@
+E:\Memory\Storage Viewer\Storage Viewer\bin\Debug\Storage Viewer.exe.config
+E:\Memory\Storage Viewer\Storage Viewer\bin\Debug\Storage Viewer.exe
+E:\Memory\Storage Viewer\Storage Viewer\bin\Debug\Storage Viewer.pdb
+E:\Memory\Storage Viewer\Storage Viewer\obj\Debug\Storage Viewer.csprojAssemblyReference.cache
+E:\Memory\Storage Viewer\Storage Viewer\obj\Debug\Storage Viewer.exe
+E:\Memory\Storage Viewer\Storage Viewer\obj\Debug\Storage Viewer.pdb
