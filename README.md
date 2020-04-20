@@ -33,7 +33,7 @@
 |20|ConsoleWeb|c#|（残废）通过控制台访问网页（控制台浏览器）|
 |21|SimpleLocker|c#|一个简单的文件加密解密工具|
 |22|StrCompare|c#|一个简单地判断两个字符串相似度的方法|
-|23|Unity.TileMap.Processer|c#|在图像周围添加一层像素，用于解决unity的tile存在缝隙的问题|
+|23|Unity.TileMap.Processor|c#|在图像周围添加一层像素，用于解决unity的tile存在缝隙的问题|
 |24|PracticeToAnswer|c#|（鸡肋）自动分割试卷并通过作业帮搜索整理答案|
 |25|FastAlpha|vb6|一个简陋的绘图框架|
 |26|FileMenu|vb6|用于弹出文件的上下文菜单|
