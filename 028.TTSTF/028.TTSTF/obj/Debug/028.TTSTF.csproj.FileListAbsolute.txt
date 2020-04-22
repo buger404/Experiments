@@ -1,0 +1,8 @@
+E:\Experiments\028.TTSTF\028.TTSTF\bin\Debug\028.TTSTF.exe.config
+E:\Experiments\028.TTSTF\028.TTSTF\bin\Debug\028.TTSTF.exe
+E:\Experiments\028.TTSTF\028.TTSTF\bin\Debug\028.TTSTF.pdb
+E:\Experiments\028.TTSTF\028.TTSTF\obj\Debug\028.TTSTF.csprojAssemblyReference.cache
+E:\Experiments\028.TTSTF\028.TTSTF\obj\Debug\Interop.SpeechLib.dll
+E:\Experiments\028.TTSTF\028.TTSTF\obj\Debug\028.TTSTF.csproj.ResolveComReference.cache
+E:\Experiments\028.TTSTF\028.TTSTF\obj\Debug\028.TTSTF.exe
+E:\Experiments\028.TTSTF\028.TTSTF\obj\Debug\028.TTSTF.pdb
