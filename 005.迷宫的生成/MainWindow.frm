@@ -126,12 +126,14 @@ Private Sub Outputs(Text As String)
 End Sub
 Private Sub Test()
     'Test Code
-    Dim Maze() As Integer, ret As String, X As Integer, Y As Integer
+    Dim Maze() As Integer, ret As String, X As Integer, Y As Integer, Time As Long
     StartBtn.Enabled = False
     StartBtn.BackColor = RGB(180, 180, 180)
     Do
         ret = ""
+        Time = GetTickCount
         Maze = BuildMaze(outputBox.Width * 0.3, outputBox.Height * 0.15, 1)
+        Me.Caption = "”√ ±" & GetTickCount - Time & "ms"
         For Y = 0 To UBound(Maze, 2)
             For X = 0 To UBound(Maze, 1)
                 ret = ret & IIf(Maze(X, Y) = 1, "®Ä", " ")
