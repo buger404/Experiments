@@ -1,8 +1,9 @@
 Attribute VB_Name = "OsuModel"
 Public Type HitObject
     X As Long
-    Y As Long
+    y As Long
     time As Single
+    kind As String
     sound As GMusic
 End Type
 Public Type BPM

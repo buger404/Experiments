@@ -32,6 +32,7 @@ Public Sub Load(OsuCode As String)
     Dim Line() As String
     Line = Split(Property("TimingPoints", ""), vbCrLf)
     ReDim BPMs(0)
+    Dim LastO As Long
     For I = 0 To UBound(Line)
         If Line(I) <> "" Then
             ReDim Preserve BPMs(UBound(BPMs) + 1)
@@ -39,13 +40,21 @@ Public Sub Load(OsuCode As String)
                 .time = Val(Split(Line(I), ",")(0))
                 .value = Val(Split(Line(I), ",")(1))
                 'Debug.Print Now, "BPM", .Value
+                If .value < 0 Then
+                    .value = LastO * Abs(100 / .value)
+                Else
+                    LastO = .value
+                End If
             End With
         End If
     Next
     Dim C() As String, ObjType As Integer
     Dim snd(2) As String
-    snd(0) = "error.mp3": snd(1) = "ding.mp3": snd(2) = "warning.mp3"
-    snd(0) = "hit.wav": snd(1) = "hit.wav": snd(2) = "hit.wav"
+    snd(0) = "error": snd(1) = "ding": snd(2) = "warning"
+    'snd(0) = "hit.wav": snd(1) = "hit.wav": snd(2) = "hit.wav"
+    For I = 1 To UBound(Objects)
+        If Not Objects(I).sound Is Nothing Then Objects(I).sound.Dispose: Set Objects(I).sound = Nothing
+    Next
     ReDim Objects(0)
     Line = Split(Property("HitObjects", ""), vbCrLf)
     For I = 0 To UBound(Line)
@@ -61,8 +70,9 @@ Public Sub Load(OsuCode As String)
                     .X = Val(C(0))
                     .y = Val(C(1))
                     .time = Val(C(2))
+                    .Kind = snd(I Mod 3)
                     Set .sound = New GMusic
-                    .sound.Create App.path & "\" & snd(I Mod 3)
+                    .sound.Create App.path & "\" & snd(I Mod 3) & ".mp3"
                 End With
             End If
             If ObjType = 2 Then
@@ -99,9 +109,13 @@ Public Sub Load(OsuCode As String)
                         With Objects(UBound(Objects))
                             .X = OX + (Val(C(0)) - OX) * (S / Span)
                             .y = OY + (Val(C(1)) - OY) * (S / Span)
+                            .Kind = snd(I Mod 3)
                             .time = OT + Span * (J - 1) + S
-                            Set .sound = New GMusic
-                            .sound.Create App.path & "\" & snd(I Mod 3)
+                            If S Mod 100 = 1 Then
+                                Set .sound = New GMusic
+                                .sound.Create App.path & "\" & snd(I Mod 3) & ".mp3"
+                                .sound.rate = 0.8 + Rnd * 0.4
+                            End If
                         End With
                     Next
                     'ReDim Preserve Objects(UBound(Objects) + 1)
@@ -126,3 +140,7 @@ Public Function Property(SubName As String, ItemName As String) As String
     If ItemName <> "" Then temp = Split(temp(1), ItemName & ":")
     Property = Split(temp(1), IIf(ItemName = "", "[", vbCrLf))(0)
 End Function
+
+Private Sub Class_Initialize()
+    ReDim Objects(0)
+End Sub

@@ -33,11 +33,11 @@ Public Sub Update()
     On Error Resume Next
     For I = 1 To UBound(CurrentObjects)
         With CurrentObjects(I)
-            If .time - o.SliderMultiplier * 500 - 1000 > Pass Then Exit For
-            If Abs(.time - Pass) <= (o.SliderMultiplier * 500) Then
-                If .time > Pass Then alpha = 0: CircleAlpha = 0 '1 - alpha
-                If .time <= Pass Then alpha = 1 - Cubic((Pass - .time) / (o.SliderMultiplier * 500), 0, 1, 1, 1): CircleAlpha = 0 '1 - (Pass - .time) / (o.SliderMultiplier * 300)
-                Page.DrawImage "win" & IIf(alpha < 0.9, "lost", "") & ".png", .X / 700 * GW + 50, .y / 560 * GH + 50, alpha:=alpha ', pos:=posOnCenter
+            If .time - o.SliderMultiplier * 200 - 1000 > Pass Then Exit For
+            If Abs(.time - Pass) <= (o.SliderMultiplier * 200) Then
+                If .time > Pass Then alpha = 1 - Cubic((.time - Pass) / (o.SliderMultiplier * 200), 0, 1, 1, 1): CircleAlpha = 0 '1 - alpha
+                If .time <= Pass Then alpha = 0: CircleAlpha = 0 '1 - (Pass - .time) / (o.SliderMultiplier * 300)
+                Page.DrawImage .Kind & IIf(alpha > 0.3, "lost", "") & ".png", .X / 700 * GW + 50, .y / 560 * GH + 50, alpha:=alpha ', pos:=posOnCenter
                 'DrawBox.Circle (.X / 700 * DrawBox.ScaleWidth + 50, .Y / 560 * DrawBox.ScaleHeight + 50), 20, RGB(255 - alpha * 255, 255 - alpha * 255, 255 - alpha * 255)
                 'If alpha <> 0 Then DrawBox.Circle (.X / 700 * DrawBox.ScaleWidth + 50, .Y / 560 * DrawBox.ScaleHeight + 50), 20 + 40 * CircleAlpha, RGB(alpha * 255, 255 - alpha * 255, 255 - alpha * 255)
                 If (Not .sound Is Nothing) And alpha > 0 Then
@@ -83,7 +83,7 @@ End Sub
 Private Sub Class_Initialize()
     Set Page = New GPage  '创建页面绘制器
     Page.Create Me  '将绘制器与控制器绑定
-    Page.Res.NewImages App.path & "\assets", 0.8 '导入资源
+    Page.Res.NewImages App.path & "\assets", 0.7 '导入资源
     ECore.Add Page, "AppPage"  '创建页面
     
     '===============================================

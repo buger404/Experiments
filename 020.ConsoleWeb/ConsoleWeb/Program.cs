@@ -19,6 +19,7 @@ namespace ConsoleWeb
 {
     class Program
     {
+        private static bool LINK = false;
         private static void Log(string log, ConsoleColor color = ConsoleColor.White)
         {
             Console.ForegroundColor = color;
@@ -37,37 +38,71 @@ namespace ConsoleWeb
             return s;
         }
 
+        private static void Outputs(NodeList nodes)
+        {
+            for (int i = 0; i < nodes.Count; i++)
+            {
+                INode node = nodes[i];
+                if (node is ITag)
+                {
+                    ITag tag = (ITag)node;
+                    if (tag.TagName == "DIV" || tag.TagName == "BR" || tag.TagName == "TR" || tag.TagName == "H3" || tag.TagName == "P")
+                    {
+                        Console.WriteLine("");
+                    }
+                    if (tag.Children != null)
+                    {
+                        if (tag.TagName != "STYLE" && tag.TagName != "SCRIPT" && tag.TagName != "NOSCRIPT")
+                        {
+                            //Console.Write(tag.TagName + " ");
+                            if (tag.TagName == "LINK" || tag.Attributes["HREF"] != null) 
+                                Console.ForegroundColor = ConsoleColor.Green;
+                            Outputs(tag.Children);
+                            Console.ForegroundColor = ConsoleColor.Gray;
+                        }
+                    }
+
+                    /**.WriteLine(tag.TagName);
+                    if (tag.Attributes["ID"] != null)
+                    {
+                        Console.WriteLine("{ id=\"" + tag.Attributes["ID"].ToString() + "\" }");
+                    }
+                    if (tag.Attributes["HREF"] != null)
+                    {
+                        Console.WriteLine("{ href=\"" + tag.Attributes["HREF"].ToString() + "\" }");
+                    }**/
+
+                }
+                else
+                {
+                    if(node is IText)
+                    {
+                        if (node.Children != null)
+                        {
+                            Outputs(node.Children);
+                        }
+                        else
+                        {
+                            Console.Write(node.GetText().Trim().Replace("&nbsp;"," ") + " ");
+                        }
+                    }
+                    
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
-            string url = "https://www.baidu.com";
+            string url = "http://www.baidu.com/s?ie=UTF-8&wd=WDDM";
             //string code = GetHTML(url);
             System.Net.WebClient web = new System.Net.WebClient();
-            web.Encoding = System.Text.Encoding.Default;
+            web.Encoding = System.Text.Encoding.UTF8;
             string code = web.DownloadString(url);
 
             Lexer l = new Lexer(code); Parser p = new Parser(l);
             NodeList rnode = p.Parse(null);
-            for (int s = 0; s < rnode.Count; s++)
-            {
-                NodeList nodes = rnode[s].Children;
-                for (int i = 0; i < nodes.Count; i++)
-                {
-                    INode node = nodes[i];
-                    if (node is ITag)
-                    {
-                        ITag tag = (ITag)node;
-                        Console.WriteLine(tag.TagName);
-                        if (tag.Attributes["ID"] != null)
-                        {
-                            Console.WriteLine("{ id=\"" + tag.Attributes["ID"].ToString() + "\" }");
-                        }
-                        if (tag.Attributes["HREF"] != null)
-                        {
-                            Console.WriteLine("{ href=\"" + tag.Attributes["HREF"].ToString() + "\" }");
-                        }
-                    }
-                }
-            }
+            Outputs(rnode);
+
             string cmd = Console.ReadLine();
         }
     }

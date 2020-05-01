@@ -140,7 +140,7 @@ Dim pkey As Integer
 Public Function NewPermissionDialog(nTitle As String, nContent As String) As Integer
     Title.Caption = nTitle
     Content.Caption = nContent
-    pkey = -1
+    pkey = 1 '-1
     Me.Show
     Do While pkey = -1
         Sleep 32: DoEvents

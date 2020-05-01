@@ -38,6 +38,14 @@ Attribute VB_Exposed = False
     Dim CloseMark As Boolean
 '==================================================
 
+Private Sub DrawTimer_Timer()
+    DrawTimer.Enabled = False
+    Do While Not CloseMark
+        EC.Display
+        DoEvents
+    Loop
+End Sub
+
 Private Sub Form_Load()
     StartEmerald Me.Hwnd, Screen.Width / Screen.TwipsPerPixelX, Screen.Height / Screen.TwipsPerPixelY   '初始化Emerald（在此处可以修改窗口大小）
     MakeFont "微软雅黑"  '创建字体
@@ -67,10 +75,8 @@ Private Sub Form_Load()
     '设置活动页面（在此处设置则为你的启动页面）
     EC.ActivePage = "AppPage"
     
-    Do While Not CloseMark
-        EC.Display
-        DoEvents
-    Loop
+    SetWindowPos Me.Hwnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE Or SWP_NOSIZE
+    DrawTimer.Enabled = True
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)

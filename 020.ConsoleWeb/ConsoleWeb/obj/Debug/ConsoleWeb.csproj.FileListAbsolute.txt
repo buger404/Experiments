@@ -6,3 +6,12 @@ E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\Interop.MSXML2.dll
 E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.csproj.ResolveComReference.cache
 E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.exe
 E:\Projects\VSProjects\ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.pdb
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\bin\Debug\ConsoleWeb.exe.config
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\bin\Debug\ConsoleWeb.exe
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\bin\Debug\ConsoleWeb.pdb
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.csprojAssemblyReference.cache
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\obj\Debug\Interop.MSXML2.dll
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.csproj.ResolveComReference.cache
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.csproj.CopyComplete
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.exe
+E:\Experiments\020.ConsoleWeb\ConsoleWeb\obj\Debug\ConsoleWeb.pdb
