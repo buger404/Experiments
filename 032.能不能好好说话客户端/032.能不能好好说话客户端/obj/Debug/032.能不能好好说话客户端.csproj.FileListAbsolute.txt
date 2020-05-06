@@ -1,0 +1,8 @@
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\bin\Debug\032.能不能好好说话客户端.exe.config
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\bin\Debug\032.能不能好好说话客户端.exe
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\bin\Debug\032.能不能好好说话客户端.pdb
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\obj\Debug\032.能不能好好说话客户端.csprojAssemblyReference.cache
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\obj\Debug\Interop.MSXML2.dll
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\obj\Debug\032.能不能好好说话客户端.csproj.ResolveComReference.cache
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\obj\Debug\032.能不能好好说话客户端.exe
+E:\Experiments\032.能不能好好说话客户端\032.能不能好好说话客户端\obj\Debug\032.能不能好好说话客户端.pdb
