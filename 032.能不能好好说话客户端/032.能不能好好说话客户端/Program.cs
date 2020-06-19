@@ -18,7 +18,8 @@ namespace _032.能不能好好说话客户端
             x.open("POST", "https://lab.magiconch.com/api/nbnhhsh/guess");
             x.setRequestHeader("content-type", "application/json");
             x.send("{\"text\":\"" + word + "\"}");
-            return x.responseText.Split('[')[2].Split(']')[0];
+            return x.responseText;
+            //return x.responseText.Split('[')[2].Split(']')[0];
         }
         static void Main(string[] args)
         {

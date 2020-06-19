@@ -1,0 +1,37 @@
+<html>
+<head>
+	<!--抄来的markdown解析js-->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!--偷来的github样式-->
+    <link rel="stylesheet" href="github.css">
+    <script>
+  	function showMarkdown(file)
+	{
+	    var x;
+	    //如果支持XMLHTTP
+	    if (window.XMLHttpRequest) x = new XMLHttpRequest();
+ 
+	    x.onreadystatechange=function()
+	    {
+	        if (x.readyState == 4 && x.status == 200)
+	        {
+	        	//将解析结果放置到'markdown'中
+	            document.getElementById("markdown").innerHTML = marked(x.responseText);
+	        }
+	    }
+	    //发送请求
+	    x.open("GET",file,true);
+	    x.send();
+	}
+	showMarkdown("md\\test.md");
+    </script>
+</head>
+<body>
+    <div class="markcontainer" style="margin-top:30px">
+    	<div id="markdown" class="markdown-body">
+    		<!--这个部分如果读取成功就会被丢弃-->
+    		☹您的浏览器不支持该文档的显示...
+    	</div>
+    </div>
+</body>
+</html>
