@@ -1,0 +1,8 @@
+E:\Experiments\034.人脸识别\034.人脸识别\bin\Release\034.人脸识别.exe.config
+E:\Experiments\034.人脸识别\034.人脸识别\bin\Release\034.人脸识别.exe
+E:\Experiments\034.人脸识别\034.人脸识别\bin\Release\034.人脸识别.pdb
+E:\Experiments\034.人脸识别\034.人脸识别\bin\Release\Newtonsoft.Json.dll
+E:\Experiments\034.人脸识别\034.人脸识别\bin\Release\Newtonsoft.Json.xml
+E:\Experiments\034.人脸识别\034.人脸识别\obj\Release\034.人脸识别.csproj.CopyComplete
+E:\Experiments\034.人脸识别\034.人脸识别\obj\Release\034.人脸识别.exe
+E:\Experiments\034.人脸识别\034.人脸识别\obj\Release\034.人脸识别.pdb
