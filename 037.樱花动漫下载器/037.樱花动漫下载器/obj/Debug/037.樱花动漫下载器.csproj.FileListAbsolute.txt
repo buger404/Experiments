@@ -1,0 +1,6 @@
+E:\Experiments\037.樱花动漫下载器\037.樱花动漫下载器\bin\Debug\037.樱花动漫下载器.exe.config
+E:\Experiments\037.樱花动漫下载器\037.樱花动漫下载器\bin\Debug\037.樱花动漫下载器.exe
+E:\Experiments\037.樱花动漫下载器\037.樱花动漫下载器\bin\Debug\037.樱花动漫下载器.pdb
+E:\Experiments\037.樱花动漫下载器\037.樱花动漫下载器\obj\Debug\037.樱花动漫下载器.csprojAssemblyReference.cache
+E:\Experiments\037.樱花动漫下载器\037.樱花动漫下载器\obj\Debug\037.樱花动漫下载器.exe
+E:\Experiments\037.樱花动漫下载器\037.樱花动漫下载器\obj\Debug\037.樱花动漫下载器.pdb

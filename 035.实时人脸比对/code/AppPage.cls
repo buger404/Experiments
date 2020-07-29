@@ -24,7 +24,9 @@ Attribute VB_Exposed = False
 Public Sub Update()
     '应用界面每一帧刷新会调用的方法（页面绘制代码请放在此处）
     
-    Page.Clear '清空画布
+    Page.Clear argb(255, 0, 0, 0) '清空画布
+
+    Page.Writes "摄像头" & NowWebcam & "未连接", GW / 2, GH / 2 - 17, 24, argb(255, 255, 255, 255), align:=StringAlignmentCenter, style:=FontStyleBold
 
     If GetTickCount - RefreshTime <= 100 Or Scan <> "" Then
         PaintDC LastDC, Page.CDC: GoTo skipCatch
@@ -79,6 +81,11 @@ skipCatch:
     
     If Working Then Page.ShowLoading GW / 2 - 50 - pro * 100, GH / 2 - 50, 100, 100, 10, argb(255, 255, 255, 255), argb(160, 255, 255, 255), argb(80, 255, 255, 255)
 
+    Page.Writes "切换摄像头", GW / 2, GH - 80 + 200 * pro, 20, argb(200 - 200 * pro, 255, 255, 255), align:=StringAlignmentCenter, style:=FontStyleBold
+    If CheckMouse(GW / 2 - 200, GH - 120, 400, 80) = mMouseUp And pro = 0 Then
+        SwitchWebCam
+    End If
+    
     If GetTickCount - PassTime >= 2000 And PassTime <> 0 Then ECore.NewTransform transDarkTo, , "MainPage"
 End Sub
 Public Sub Wheel(Direction As Integer, Depth As Single)

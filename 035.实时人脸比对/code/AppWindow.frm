@@ -20,15 +20,15 @@ Begin VB.Form AppWindow
       BackColor       =   &H80000005&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   1884
+      Height          =   324
       Left            =   0
-      ScaleHeight     =   157
+      ScaleHeight     =   27
       ScaleMode       =   3  'Pixel
-      ScaleWidth      =   313
+      ScaleWidth      =   27
       TabIndex        =   0
       Top             =   0
       Visible         =   0   'False
-      Width           =   3756
+      Width           =   324
    End
    Begin VB.Timer DrawTimer 
       Enabled         =   0   'False

@@ -6,10 +6,16 @@ Private Const COPY As Long = 1054
 Private Const CONNECT As Long = 1034
 Private Const DISCONNECT As Long = 1035
 Private CapHwnd As Long, CapBox As PictureBox
+Public NowWebcam As Integer
 Public Sub StartWebCam(RenderBox As PictureBox)
     Set CapBox = RenderBox
     CapHwnd = capCreateCaptureWindow("WebcamCapture", 0, 0, 0, CapBox.Width, CapBox.Height, 0, 0)
     SendMessage CapHwnd, CONNECT, 0, 0
+End Sub
+Public Sub SwitchWebCam()
+    SendMessage CapHwnd, DISCONNECT, NowWebcam, NowWebcam
+    NowWebcam = IIf(NowWebcam = 0, 1, 0)
+    SendMessage CapHwnd, CONNECT, NowWebcam, NowWebcam
 End Sub
 Public Sub StopWebCam()
     SendMessage CapHwnd, DISCONNECT, 0, 0
