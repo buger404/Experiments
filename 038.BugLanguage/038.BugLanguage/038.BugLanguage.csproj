@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_038.BugLanguage</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\Simplified Chinese Pin-Yin Conversion Library\ChnCharInfo.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

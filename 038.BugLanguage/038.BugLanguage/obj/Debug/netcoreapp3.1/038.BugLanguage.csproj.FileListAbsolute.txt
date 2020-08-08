@@ -1,0 +1,15 @@
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\038.BugLanguage.exe
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\038.BugLanguage.deps.json
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\038.BugLanguage.runtimeconfig.json
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\038.BugLanguage.runtimeconfig.dev.json
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\038.BugLanguage.dll
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\038.BugLanguage.pdb
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\ChnCharInfo.dll
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\ChnCharInfo.xml
+E:\Experiments\038.BugLanguage\038.BugLanguage\bin\Debug\netcoreapp3.1\zh-CN\ChnCharInfo.resources.dll
+E:\Experiments\038.BugLanguage\038.BugLanguage\obj\Debug\netcoreapp3.1\038.BugLanguage.csprojAssemblyReference.cache
+E:\Experiments\038.BugLanguage\038.BugLanguage\obj\Debug\netcoreapp3.1\038.BugLanguage.AssemblyInfoInputs.cache
+E:\Experiments\038.BugLanguage\038.BugLanguage\obj\Debug\netcoreapp3.1\038.BugLanguage.AssemblyInfo.cs
+E:\Experiments\038.BugLanguage\038.BugLanguage\obj\Debug\netcoreapp3.1\038.BugLanguage.csproj.CopyComplete
+E:\Experiments\038.BugLanguage\038.BugLanguage\obj\Debug\netcoreapp3.1\038.BugLanguage.dll
+E:\Experiments\038.BugLanguage\038.BugLanguage\obj\Debug\netcoreapp3.1\038.BugLanguage.pdb
